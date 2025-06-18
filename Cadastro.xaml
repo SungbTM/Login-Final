@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginTeste.Cadastro"
+             Title="Cadastro">
+    <VerticalStackLayout
+        
+            VerticalOptions="Center"
+            Spacing="10"
+            Padding="10"
+            BackgroundColor="YellowGreen">
+        
+        <Label Text="Sistema de Cadastro Item"
+                   Margin="7"                 
+                   FontSize="Subtitle"        
+                   HorizontalOptions="Center" />
+
+            <Label Text="Nome do Item" />
+            <Entry x:Name="txtCadastro" ReturnType="Next" />
+
+            <Label Text="Preço" />
+            <Entry x:Name="txtPreço" />
+
+        <Button
+            Text="Voltar"
+            Margin="40"
+            BackgroundColor="Red"
+            TextColor="White"
+            FontSize="Medium"
+            x:Name="btnVoltarCadastro"
+            Clicked="btnVoltarCadastro_Clicked"
+            />
+        <Button
+            Text="Finalizar Cadastro"
+            BackgroundColor="Green"
+            FontSize="Medium"
+            x:Name="btnFinalizar"
+            Clicked="btnFinalizar_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>

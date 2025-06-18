@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginTeste.Loja"
+             Title="Loja">
+    <VerticalStackLayout
+        BackgroundColor="YellowGreen">
+        <Label 
+            Text="Página inicial da Loja"
+            Margin="42"
+            
+            
+            FontSize="Medium"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Armário"/>
+        <Label 
+            Text="Cadeiras"/>
+        <Label 
+            Text="Mesa"/>
+        <Label 
+            Text="Tv"/>
+        <Label 
+            Text="Colchão"/>
+        <Label 
+            Text="Geladeira"/>
+        <Label 
+            Text="Ventilador"/>
+        <Button
+            x:Name="btnCadastro"
+            Margin="10"
+            Text="Cadastrar Item"
+            Clicked="btnCadastro_Clicked"
+            />
+        <Button
+            Text="Voltar"
+            Margin="10"
+            x:Name="btnVoltarLoja"
+            Clicked="btnVoltarLoja_Clicked"
+            />
+
+        <Label x:Name="lblNomeProduto" />
+        <Label x:Name="lblValor" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
